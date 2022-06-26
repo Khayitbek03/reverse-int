@@ -6,7 +6,7 @@ module.exports = function reverse (n) {
   while(n>0){
     a=n%10;
     sum=sum*10+a;
-    n=n/10|0;
+    n=Math.trunc(n/10);
   }
   return sum;
 }
